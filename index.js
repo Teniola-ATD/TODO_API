@@ -12,7 +12,7 @@ const router = require("./Routes/todoRoutes");
 
 // ===== DATABASE URLS =====
 const live_url =
-  "mongodb+srv://Ateniola:Ateniola%40@cluster0.hhdb23r.mongodb.net/userDB?retryWrites=true&w=majority";
+  "mongodb+srv://Ateniola:Ateniola@cluster0.hhdb23r.mongodb.net/userDB?retryWrites=true&w=majority";
 
 const local_url = "mongodb://localhost:27017/userDB";
 
