@@ -42,7 +42,7 @@ const getOneTodo = async (req, res) => {
 const updateTodo = async (req, res) => {
     try {
         const { id } = req.params;
-
+        
         const { completed } = req.body || {};
 
         const todo = await TodoModel.findByIdAndUpdate(
