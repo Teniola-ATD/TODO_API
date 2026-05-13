@@ -8,7 +8,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 // routes
-const router = require("./routes/todoRoutes");
+const router = require("./Routes/todoRoutes"); 
 
 // ===== DATABASE URLS =====
 const live_url =
@@ -17,7 +17,7 @@ const live_url =
 const local_url = "mongodb://localhost:27017/userDB";
 
 // CHOOSE ONE DATABASE HERE
-const db_url = local_url; // change to live_url when using Atlas
+const db_url = live_url;
 
 // connect to MongoDB (ONLY ONCE)
 mongoose
@@ -27,7 +27,7 @@ mongoose
 
 // create express app
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000
 
 // middleware
 app.use(cors());
